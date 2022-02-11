@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  position: relative;
+}
+
+.badge {
+  background: red;
+  color: white;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  font-size: 10px;
+  border-radius: 50%;
+  min-width: 10px;
+  min-height: 10px;
+  text-align: center;
+}

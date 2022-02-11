@@ -1,0 +1,21 @@
+<nav>
+  <ul>
+    <li
+      tabIndex="0"
+      [routerLink]="''"
+      [routerLinkActive]="'active'"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Home
+    </li>
+    <li
+      *ngFor="let extension of extensions"
+      tabIndex="0"
+      [routerLink]="extension.route | async"
+      [routerLinkActive]="'active'"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <ng-container *ngComponentOutlet="extension.toolbarItem"></ng-container>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,23 @@
+:host {
+  box-shadow: 0px 1px 0px 0px black;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+li:hover,
+li:focus,
+li.active {
+  background: black;
+  color: white;
+}
